@@ -1,0 +1,70 @@
+<template>
+	<div class="base column">
+		<div class="page column">
+			<div class="textbox">
+				<div class="textnanim">
+					<div class="text">
+						<text>{{ textbox }}</text>
+					</div>
+					<image-animator
+						class="animator"
+						id="animator"
+						images="{{frames}}"
+						duration="500ms"
+					/>
+				</div>
+				<image src="/common/icon_del.png" @click="clickdel" />
+			</div>
+			<div class="line1">
+				<input class="btn1" type="button" value="1" @click="clickButton('1')" />
+				<input class="btn1" type="button" value="2" @click="clickButton('2')" />
+				<input class="btn1" type="button" value="3" @click="clickButton('3')" />
+				<input class="btn1" type="button" value="4" @click="clickButton('4')" />
+				<input class="btn1" type="button" value="5" @click="clickButton('5')" />
+				<input class="btn1" type="button" value="6" @click="clickButton('6')" />
+				<input class="btn1" type="button" value="7" @click="clickButton('7')" />
+				<input class="btn1" type="button" value="8" @click="clickButton('8')" />
+				<input class="btn1" type="button" value="9" @click="clickButton('9')" />
+				<input class="btn1" type="button" value="0" @click="clickButton('0')" />
+			</div>
+			<div class="line2">
+				<input class="btn2" type="button" value="!" @click="clickButton('!')" />
+				<input class="btn2" type="button" value="@" @click="clickButton('@')" />
+				<input class="btn2" type="button" value="#" @click="clickButton('#')" />
+				<input class="btn2" type="button" value="$" @click="clickButton('$')" />
+				<input class="btn2" type="button" value="%" @click="clickButton('%')" />
+				<input class="btn2" type="button" value="^" @click="clickButton('^')" />
+				<input class="btn2" type="button" value="&" @click="clickButton('&')" />
+				<input class="btn2" type="button" value="*" @click="clickButton('*')" />
+				<input class="btn2" type="button" value="(" @click="clickButton('(')" />
+				<input class="btn2" type="button" value=")" @click="clickButton(')')" />
+			</div>
+			<div class="line3">
+				<input class="btn3" type="button" value="-" @click="clickButton('-')" />
+				<input class="btn3" type="button" value="'" @click="clickButton('\'')" />
+				<input class="btn3" type="button" value="&quot;" @click="clickButton('&quot;')" />
+				<input class="btn3" type="button" value=":" @click="clickButton(':')" />
+				<input class="btn3" type="button" value=";" @click="clickButton(';')" />
+				<input class="btn3" type="button" value="," @click="clickButton(',')" />
+				<input class="btn3" type="button" value="?" @click="clickButton('?')" />
+				<input class="btn3" type="button" value="." @click="clickButton('.')" />
+			</div>
+			<div class="line4">
+				<text class="caps">{{ caps }}</text>
+				<div class="switch">
+					<image class="btn4" src="/common/ic_left.png" @click="clickleft" />
+					<text class="lang">符号英</text>
+					<image class="btn4" src="/common/ic_right.png" @click="clickright" />
+				</div>
+				<image class="send" src="/common/ic_send.png" @click="clicksend" />
+			</div>
+			<div class="line5">
+				<image src="/common/ic_space.png" @click="clickspace" />
+			</div>
+		</div>
+	</div>
+</template>
+
+<script src="./symbol.js"></script>
+
+<style src="./symbol.css"></style>

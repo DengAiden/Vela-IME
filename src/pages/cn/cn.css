@@ -1,0 +1,181 @@
+.column {
+    flex-direction: column;
+    color: white;
+}
+
+.base {
+    background-color: black;
+}
+
+.pre {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.pret {
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.animator {
+    width: 3px;
+    height: 35px;
+    margin-top: 37px;
+}
+
+.textbox {
+    height: 100px;
+    align-items: center;
+}
+
+.textbox1 {
+    margin-bottom: 10px;
+}
+
+.imgr {
+    margin-top: 2px;
+}
+
+.btn1 {
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+.btn2,
+.btn2s,
+.btn3,
+.btn3s {
+    color: white;
+    background-color: black;
+}
+
+.btn3,.btn3s {
+    font-size: 25px;
+    text-align: center;
+    width: 80px;
+}
+
+.btn3s {
+    margin: 7px;
+}
+
+.btn2s,
+.btn3s {
+    margin-bottom: 50px;
+}
+
+.btn3 {
+    margin: 7px;
+}
+
+.textarea {
+    margin-top: 35px;
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+.stext {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.select {
+    background-color: rgb(33, 33, 33);
+    height: 70px;
+    align-items: center;
+}
+
+.part1 {
+    height: 150px;
+}
+
+.pinyin {
+    width: 90px;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.ninebox{
+    width: 300px;
+}
+
+.ofs {
+    width: 100px;
+}
+
+.tfe {
+    width: 100px;
+}
+
+.tsn {
+    width: 100px;
+}
+
+.func {
+    width: 90px;
+    height: 200px;
+    align-items: center;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+    justify-content: center;
+    align-items: center;
+}
+
+.numt {
+    width: 100px;
+    text-align: center;
+}
+
+.scroll {
+    width: 300px;
+}
+
+.tbox {
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 5px;
+}
+
+.btnd {
+    width: 50px;
+}
+
+.t {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.part2 {
+    height: 240px;
+    margin-top: 5px;
+}
+
+.part3 {
+    height: 65px;
+}
+
+.lang,
+.zerot {
+    text-align: center;
+}
+
+.zerot {
+    margin-left: 165px;
+    margin-right: 20px;
+}
+
+.switch {
+    align-items: center;
+    margin-bottom: 9px;
+}

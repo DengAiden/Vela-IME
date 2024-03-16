@@ -1,0 +1,69 @@
+<template>
+	<div class="base column">
+		<div class="page column">
+			<div class="textbox">
+				<div class="textnanim">
+					<div class="text">
+						<text>{{ textbox }}</text>
+					</div>
+					<image-animator
+						class="animator"
+						id="animator"
+						images="{{frames}}"
+						duration="500ms"
+					/>
+				</div>
+				<image src="/common/icon_del.png" @click="clickdel" />
+			</div>
+			<div class="line1">
+				<input class="btn1" type="button" value={{q}} @click="clickq" />
+				<input class="btn1" type="button" value={{w}} @click="clickw" />
+				<input class="btn1" type="button" value={{e}} @click="clicke" />
+				<input class="btn1" type="button" value={{r}} @click="clickr" />
+				<input class="btn1" type="button" value={{t}} @click="clickt" />
+				<input class="btn1" type="button" value={{y}} @click="clicky" />
+				<input class="btn1" type="button" value={{u}} @click="clicku" />
+				<input class="btn1" type="button" value={{i}} @click="clicki" />
+				<input class="btn1" type="button" value={{o}} @click="clicko" />
+				<input class="btn1" type="button" value={{p}} @click="clickp" />
+			</div>
+			<div class="line2">
+				<input class="btn2" type="button" value={{a}} @click="clicka" />
+				<input class="btn2" type="button" value={{s}} @click="clicks" />
+				<input class="btn2" type="button" value={{d}} @click="clickd" />
+				<input class="btn2" type="button" value={{f}} @click="clickf" />
+				<input class="btn2" type="button" value={{g}} @click="clickg" />
+				<input class="btn2" type="button" value={{h}} @click="clickh" />
+				<input class="btn2" type="button" value={{j}} @click="clickj" />
+				<input class="btn2" type="button" value={{k}} @click="clickk" />
+				<input class="btn2" type="button" value={{l}} @click="clickl" />
+			</div>
+			<div class="line3">
+				<input class="btn3" type="button" value={{z}} @click="clickz" />
+				<input class="btn3" type="button" value={{x}} @click="clickx" />
+				<input class="btn3" type="button" value={{c}} @click="clickc" />
+				<input class="btn3" type="button" value={{v}} @click="clickv" />
+				<input class="btn3" type="button" value={{b}} @click="clickb" />
+				<input class="btn3" type="button" value={{n}} @click="clickn" />
+				<input class="btn3" type="button" value={{m}} @click="clickm" />
+				<image class="enter" src="/common/ic_enter.png" @click="clickenter" />
+			</div>
+			<div class="line4">
+				<image class="caps" src="{{capsicon}}" @click="clickshift" />
+				<div class="switch">
+					<image class="btn4" src="/common/ic_left.png" @click="clickleft" />
+					<text class="lang">英</text>
+					<image class="btn4" src="/common/ic_right.png" @click="clickright" />
+				</div>
+				<image class="send" src="/common/ic_send.png" @click="clicksend" />
+			</div>
+			<div class="line5">
+				<image src="/common/ic_space.png" @click="clickspace" />
+			</div>
+		</div>
+	</div>
+</template>
+
+<script src="./en.js"></script>
+
+<style src="./en.css"></style>

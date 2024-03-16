@@ -1,0 +1,156 @@
+<template>
+	<div class="base column">
+		<div class="part1 column">
+			<div class="pre">
+				<text class="pret">{{ pre }}</text>
+			</div>
+			<div class="textbox">
+				<div class="textbox1">
+					<text class="textarea">{{ textbox }}</text>
+					<image-animator
+						class="animator"
+						id="animator"
+						images="{{frames}}"
+						duration="500ms"
+					/>
+				</div>
+			</div>
+			<div class="select">
+				<div class="stext">
+					<input class="btn1" type="button" value="{{t1t}}" @click="t1" />
+					<input class="btn1" type="button" value="{{t2t}}" @click="t2" />
+					<input class="btn1" type="button" value="{{t3t}}" @click="t3" />
+					<input class="btn1" type="button" value="{{t4t}}" @click="t4" />
+					<input class="btn1" type="button" value="{{t5t}}" @click="t5" />
+				</div>
+				<image class="imgr" src="{{tmoreic}}" @click="tmore" />
+			</div>
+		</div>
+		<div class="part2">
+			<div class="pinyin column">
+				<input
+					class="btn2"
+					if="{{visible1}}"
+					type="button"
+					value="，"
+					@click="dou"
+				/>
+				<input
+					class="btn2"
+					if="{{visible1}}"
+					type="button"
+					value="。"
+					@click="ju"
+				/>
+				<input
+					class="btn2s"
+					if="{{visible1}}"
+					type="button"
+					value="？"
+					@click="wen"
+				/>
+				<input
+					class="btn3"
+					if="{{visible2}}"
+					type="button"
+					value="{{candi1}}"
+					@click="candi1f"
+				/>
+				<input
+					class="btn3"
+					if="{{visible2}}"
+					type="button"
+					value="{{candi2}}"
+					@click="candi2f"
+				/>
+				<input
+					class="btn3"
+					if="{{visible2}}"
+					type="button"
+					value="{{candi3}}"
+					@click="candi3f"
+				/>
+				<input
+					class="btn3s"
+					if="{{visible2}}"
+					type="button"
+					value="{{candi4}}"
+					@click="candi4f"
+				/>
+			</div>
+			<div class="ninebox">
+				<div class="scroll" if="{{visible4}}">
+					<image class="btnd" src="/common/ic_left.png" @click="left" />
+					<div class="tbox">
+						<text class="t" for="{{list}}" @touchend="t($item)">
+							{{ $item }}
+						</text>
+					</div>
+					<image class="btnd" src="/common/ic_right.png" @click="right" />
+				</div>
+				<div class="ofs column" if="{{visible3}}">
+					<div class="one column" @click="one">
+						<text class="numt">1</text>
+						<text class="numt">分词</text>
+					</div>
+					<div class="four column" @click="four">
+						<text class="numt">4</text>
+						<text class="numt">GHI</text>
+					</div>
+					<div class="seven column" @click="seven">
+						<text class="numt">7</text>
+						<text class="numt">PQRS</text>
+					</div>
+				</div>
+				<div class="tfe column" if="{{visible3}}">
+					<div class="two column" @click="two">
+						<text class="numt">2</text>
+						<text class="numt">ABC</text>
+					</div>
+					<div class="five column" @click="five">
+						<text class="numt">5</text>
+						<text class="numt">JKL</text>
+					</div>
+					<div class="eight column" @click="eight">
+						<text class="numt">8</text>
+						<text class="numt">TUV</text>
+					</div>
+				</div>
+				<div class="tsn column" if="{{visible3}}">
+					<div class="three column" @click="three">
+						<text class="numt">3</text>
+						<text class="numt">DEF</text>
+					</div>
+					<div class="six column" @click="six">
+						<text class="numt">6</text>
+						<text class="numt">MNO</text>
+					</div>
+					<div class="nine column" @click="nine">
+						<text class="numt">9</text>
+						<text class="numt">WXYZ</text>
+					</div>
+				</div>
+			</div>
+			<div class="func column">
+				<image class="btn3" src="/common/icon_del.png" @click="del" />
+				<image class="btn3" src="/common/ic_send.png" @click="send" />
+				<image class="btn3" src="/common/ic_enter.png" @click="enter" />
+			</div>
+		</div>
+		<div class="part3">
+			<div class="zero column" @click="zero">
+				<text class="zerot">0</text>
+				<image class="zerot" src="/common/ic_space.png" />
+			</div>
+			<div class="switch">
+				<image class="btn2" src="/common/ic_left.png" @click="clickleft" />
+				<text class="lang">中</text>
+				<image class="btn2" src="/common/ic_right.png" @click="clickright" />
+			</div>
+		</div>
+	</div>
+</template>
+
+<script src="./cn.js"></script>
+
+<style src="./cn.css"></style>

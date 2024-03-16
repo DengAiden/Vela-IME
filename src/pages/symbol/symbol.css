@@ -1,0 +1,109 @@
+.column {
+    flex-direction: column;
+}
+
+.base {
+    background-color: black;
+}
+
+.textbox {
+    color: white;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.text {
+    text-overflow: ellipsis;
+}
+
+.textnanim {
+    width: 340px;
+    height: 60px;
+}
+
+.page {
+    align-items: center;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+    background-color: black;
+    color: white;
+}
+
+.btn4 {
+    width: 40px;
+    height: 48px;
+}
+
+.lang {
+    background-color: rgb(38, 38, 38);
+    width: 100px;
+    text-align: center;
+}
+
+.animator {
+    width: 3px;
+    height: 35px;
+    margin-top: 13px;
+}
+
+.switch {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(38, 38, 38);
+    background-color: rgb(38, 38, 38);
+}
+
+.caps {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.send {
+    margin-left: 5px;
+}
+
+.line1 {
+    height: 45px;
+    width: 450px;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.line2 {
+    height: 45px;
+    width: 450px;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.line3 {
+    height: 45px;
+    width: 430px;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.line4 {
+    height: 60px;
+    width: 450px;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.line5 {
+    margin-top: 5px;
+    margin-left: 7px;
+}
