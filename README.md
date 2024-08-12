@@ -13,7 +13,6 @@
 
 --enable-custom-component true
 
-[CODE=javascript]"scripts": {
 
     "start": "aiot server --watch --open-nuttx --enable-custom-component true",
 
@@ -25,7 +24,6 @@
 
     "lint": "eslint --format codeframe --fix --ext .ux,.js src/"
 
-  },[/CODE]
 
 
 
@@ -33,27 +31,29 @@
 
 ④在页面中 可显示的全屏根div 下尾部位置添加
 
-[CODE=html]<div class="ime" style="display: {{showStatus}};">
 
+
+   <div class="ime" style="display: {{showStatus}};"> 
     <ime hide="{{hide}}" @press="press"></ime>
+    </div>
 
-</div>[/CODE]
+
 
 
 
 ⑤script下export default内的页面数据模型内添加以下变量
 
-[CODE=javascript]inputbox: "",    //此为输入法返回的文本，按需处理此变量
+inputbox: "",    //此为输入法返回的文本，按需处理此变量
 
 showStatus: "flex",
 
-hide: false[/CODE]
+hide: false
 
 
 
 ⑥接着添加以下方法
 
-[CODE=javascript]changeState() {
+changeState() {
 
     this.showStatus = "flex"
 
@@ -73,13 +73,13 @@ hide: false[/CODE]
 
     }
 
-  }[/CODE]
+  }
 
 
 
 ⑦为需要唤起输入法的文本框添加事件
 
-[CODE=html]@click="changeState"[/CODE]
+@click="changeState"
 
 
 
