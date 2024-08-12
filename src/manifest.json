@@ -1,6 +1,6 @@
 {
-  "package": "com.logs.vela.ime",
-  "name": "船帆输入法",
+  "package": "com.application.ime.demo",
+  "name": "输入法测试",
   "versionName": "1.0.0",
   "versionCode": 1,
   "minPlatformVersion": 1000,
@@ -13,24 +13,18 @@
       "name": "system.router"
     },
     {
-      "name": "system.storage"
+      "name": "system.vibrator"
     }
   ],
   "config": {
     "logLevel": "log",
-    "designWidth": 466
+    "designWidth": 480
   },
   "router": {
-    "entry": "pages/en",
+    "entry": "pages/index",
     "pages": {
-      "pages/en": {
-        "component": "en"
-      },
-      "pages/symbol": {
-        "component": "symbol"
-      },
-      "pages/cn": {
-        "component": "cn"
+      "pages/index": {
+        "component": "index"
       }
     }
   }
